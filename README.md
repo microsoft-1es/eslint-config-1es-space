@@ -1,14 +1,30 @@
-# Project
+# ESLint Config for 1ES SPACE
+This package contains a set of ESLint rules to be re-used across 1ES SPACE UI projects using TypeScript and React.
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+To get started, install the package with `npm i -D eslint-config-1es-space`
 
-As the maintainer of this project, please make a few updates:
+Next, if you do not already have an `.eslintrc.js` file, create one with the following contents:
+```javascript
+module.exports = {
+    extends: "1es-space",
+    rules: {
+        // Additional rules or overrides can go here
+    }
+}
+```
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This assumes you have a `.tsconfig.json` file in the same directory. If you have it in a different directory or under another name, you need to configure it with the parser options
+
+```javascript
+module.exports = {
+    ...
+    parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: [<tsconfig filename>]
+    }
+    ...
+}
+```
 
 ## Contributing
 
