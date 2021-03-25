@@ -2,6 +2,14 @@
     "name": "eslint-config-1es-space",
     "version": "1.0.0",
     "description": "A set of eslint-config rules to share across 1ES SPACE projects",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft-1es/eslint-config-1es-space"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
     "main": "index.js",
     "dependencies": {
         "@typescript-eslint/parser": ">=4"
@@ -13,6 +21,6 @@
         "eslint-plugin-react": ">=7",
         "eslint-plugin-react-hooks": ">=4"
     },
-    "author": "",
+    "author": "Microsoft",
     "license": "MIT"
 }
