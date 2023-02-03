@@ -34,6 +34,10 @@ module.exports = {
         "no-useless-backreference": "error",
         "require-atomic-updates": "error",
         "eqeqeq": "error",
+        "semi": ["error", "always", { "omitLastInOneLineBlock": false, }],
+        "semi-style": ["error", "last"],
+        "no-extra-semi": ["error"],
+        "semi-spacing": ["error", { "before": false, "after": true }],
 
 
         //
